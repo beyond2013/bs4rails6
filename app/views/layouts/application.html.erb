@@ -11,8 +11,10 @@
 
   <body>
      <div class="container-fluid"> 
-      <%= render partial: "navbar" %>
-    <%= yield %>
+      <%= render "layouts/navbar" %>
+      <p class="notice"> <%= notice %> </p> 
+       <p class="alert"> <%= alert %> </p>
+       <%= yield %>
      </div>
   </body>
 </html>
