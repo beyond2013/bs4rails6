@@ -16,7 +16,7 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
   # config.secret_key = ''
 
-  config.secret_key = Figaro.env.DEVISE_SECRET_KEY if Rails.env.development?
+  config.secret_key = Figaro.env.DEVISE_SECRET_KEY if Rails.env.production?
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
